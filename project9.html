@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveScore App Project Section</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Daniel Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta property="og:description" content="Designing sleek, user-focused experiences with a blend of creativity, strategy, and code." />
+  <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta property="og:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniel-okpechi-omega.vercel.app" /> <!-- Replace with your actual URL -->
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta name="twitter:description" content="Blending design, empathy, and frontend magic to craft seamless digital products." />
+  <meta name="twitter:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta name="twitter:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <link rel="shortcut icon" href="imgs/Daniel Okpechi.png" type="image/x-icon">
+</head>
+<body>
+
+  <section class="project-section">
+    <div class="project-text">
+      <h1>LiveScore App</h1>
+      <p>
+        This mobile football app was designed to deliver live scores, match stats, and real-time updates to fans with speed and clarity. Built for quick access and minimal distraction, the app puts the thrill of the game front and center—perfect for fans who want to stay in the loop anytime, anywhere.
+      </p>
+      
+      <a href="https://www.behance.net/gallery/146491043/Soccer-news-and-live-score-app" target="_blank"><button class="btn">Live Behance Project</button></a>
+
+      <div class="meta">
+        <div>
+          <span>Title</span>
+          LiveScore App Design
+        </div>
+        <div>
+          <span>Role</span>
+         Lead Product Designer
+        </div>
+      </div>
+      <div class="tags-container">
+        <div class="tags-heading">Tags</div>
+        <div class="tag-group">
+          <span class="tag green">UI/UX</span>
+          <span class="tag teal">Mobile App</span>
+          <span class="tag red">Sports</span>
+          <span class="tag blue">Live Data</span>
+          <span class="tag gray">Real-time</span>
+        </div>
+      </div>      
+    </div>
+
+    <div class="project-image">
+      <div class="image-carousel" id="myCarousel">
+        <div class="carousel-slide active" style="background-image: url('imgs2/project9\ \(1\).png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs2/project9\ \(2\).png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs2/project9\ \(3\).png');"></div>
+      
+        <button class="carousel-button prev" aria-label="Previous slide">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="carousel-button next" aria-label="Next slide">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="project-summary">
+    <h2 class="section-title"><i class="fa-solid fa-futbol"></i> Football Live Scores App – Mobile UI/UX Design</h2>
+    <p class="section-text">
+      I designed a fast, responsive football app that delivers real-time match scores, team stats, and fixtures to fans. The interface is built to prioritize speed, readability, and live interaction—keeping users updated during every moment of the game.
+    </p>
+    <img src="imgs/project9.png" style="border-radius: 20px;" width="100%" alt="">
+    <h3 class="section-subtitle"><i data-lucide="target"></i> Goal</h3>
+    <p class="section-text">
+      Build a mobile-first platform that allows users to track live scores, follow their favorite teams, and get instant notifications. The UI needed to be clear under pressure and easy to navigate during fast-paced matches.
+    </p>
+  
+    <h3 class="section-subtitle"><i data-lucide="lightbulb"></i> Challenge</h3>
+    <p class="section-text">
+      Delivering real-time updates without overwhelming users was a key challenge. I focused on clean typography, modular components, and intuitive layouts that display the most relevant info at a glance—especially on small screens.
+    </p>
+    <img src="imgs2/project9 (2).png" style="border-radius: 20px;" width="100%" alt="">
+    <h3 class="section-subtitle"><i data-lucide="star"></i> Result</h3>
+    <p class="section-text">
+      The final product is a sleek, high-performance app that delivers live football scores with minimal lag and maximum usability. Fans can follow matches in real-time and stay connected to the game wherever they are.
+    </p>
+  </section>
+  <script>
+    lucide.createIcons();
+  
+    const carousel = document.getElementById('myCarousel');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevButton = carousel.querySelector('.carousel-button.prev');
+    const nextButton = carousel.querySelector('.carousel-button.next');
+  
+    let currentSlide = 0;
+    let autoSlideInterval = setInterval(nextSlide, 4000);
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(nextSlide, 4000);
+    }
+  
+    nextButton.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  
+    prevButton.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+  </script>
+<a href="projects.html" class="go-back-button">Go Back</a>
+</body>
+</html>

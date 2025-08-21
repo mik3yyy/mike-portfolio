@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Agency App Project Section</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Daniel Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta property="og:description" content="Designing sleek, user-focused experiences with a blend of creativity, strategy, and code." />
+  <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta property="og:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniel-okpechi-omega.vercel.app" /> <!-- Replace with your actual URL -->
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta name="twitter:description" content="Blending design, empathy, and frontend magic to craft seamless digital products." />
+  <meta name="twitter:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta name="twitter:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <link rel="shortcut icon" href="imgs/Daniel Okpechi.png" type="image/x-icon">
+</head>
+<body>
+
+  <section class="project-section">
+    <div class="project-text">
+      <h1>Travel Agency</h1>
+      <p>
+        This travel agency app was created to reimagine how people plan and book their journeys—from weekend getaways to global adventures. The goal was to deliver a user-friendly, visually rich interface that guides users through destination discovery, itinerary building, and seamless booking. With a mobile-first approach, the design encourages exploration while keeping the experience fast, intuitive, and trustworthy.
+      </p>
+      
+      <a href="https://www.behance.net/gallery/145925165/Travel-agency-app" target="_blank"><button class="btn">Live Behance Project</button></a>
+
+      <div class="meta">
+        <div>
+          <span>Title</span>
+          Travel Agency App
+        </div>
+        <div>
+          <span>Role</span>
+         Lead Product Designer
+        </div>
+      </div>
+      <div class="tags-container">
+        <div class="tags-heading">Tags</div>
+        <div class="tag-group">
+          <span class="tag green">UI/UX</span>
+          <span class="tag teal">Mobile App</span>
+          <span class="tag blue">Travel</span>
+          <span class="tag orange">Booking</span>
+          <span class="tag gray">Maps Integration</span>
+        </div>
+      </div>       
+    </div>
+
+    <div class="project-image">
+      <div class="image-carousel" id="myCarousel">
+        <div class="carousel-slide active" style="background-image: url('imgs2/project4.png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs/project4.png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs2/project4.png');"></div>
+      
+        <button class="carousel-button prev" aria-label="Previous slide">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="carousel-button next" aria-label="Next slide">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="project-summary">
+    <h2 class="section-title"><i data-lucide="globe-2"></i> Travel Agency App – UI/UX Design</h2>
+    <p class="section-text">
+      This travel agency app was designed to simplify how users plan, explore, and book their trips. The project combines a visually engaging interface with functional UX patterns to create a seamless travel experience—from discovery to confirmation.
+    </p>
+    <img src="imgs/project4.png" style="border-radius: 20px;" width="100%" alt="">
+    <h3 class="section-subtitle"><i data-lucide="target"></i> Goal</h3>
+    <p class="section-text">
+      Develop a mobile-first platform that empowers users to browse destinations, customize itineraries, and book services effortlessly. The design needed to inspire trust, encourage exploration, and support quick decision-making.
+    </p>
+  
+    <h3 class="section-subtitle"><i data-lucide="lightbulb"></i> Challenge</h3>
+    <p class="section-text">
+      Balancing rich visuals with performance was a key challenge. I prioritized fast-loading images, modular layouts, and intuitive filters to deliver an engaging yet efficient experience across devices.
+    </p>
+    <img src="imgs2/project4.png" style="border-radius: 20px;" width="100%" alt="">
+    <h3 class="section-subtitle"><i data-lucide="star"></i> Result</h3>
+    <p class="section-text">
+      The final product is a clean, responsive app that reduces friction in trip planning and enhances user confidence. The design supports spontaneous discovery as well as detailed travel preparation with equal ease.
+    </p>
+  </section>
+  
+  
+  
+  <div class="carousel-cont">
+
+  
+</div>
+  <script>
+    lucide.createIcons();
+  
+    const carousel = document.getElementById('myCarousel');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevButton = carousel.querySelector('.carousel-button.prev');
+    const nextButton = carousel.querySelector('.carousel-button.next');
+  
+    let currentSlide = 0;
+    let autoSlideInterval = setInterval(nextSlide, 4000);
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(nextSlide, 4000);
+    }
+  
+    nextButton.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  
+    prevButton.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+  </script>
+  
+  
+<br>
+
+
+
+
+  
+
+    <a href="projects.html" class="go-back-button">Go Back</a>
+</body>
+</html>
